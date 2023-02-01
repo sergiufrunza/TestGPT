@@ -1,0 +1,31 @@
+<div class="section wf-section">
+    <div class="container w-container">
+      <div class="form-block w-form">
+        <form id="email-form" name="email-form" data-name="Email Form" method="post" class="form-2">
+            {% csrf_token %}
+          <div class="w-layout-grid">
+              {{ form.temperature }}
+              {{ form.context }}
+              {{ form.answer }}
+              </div>
+          <div class="w-layout-grid grid-2">
+              {{ form.question }}
+              <input type="submit" value="Ask Aaron" data-wait="Please wait..." id="w-node-_67e93785-6278-b925-a661-4f92cae5470e-14932c8f" class="submit-button-3 w-button">
+            <div id="w-node-_6631eeeb-ea6e-dcc6-d053-3ab58117e430-14932c8f">
+              <ul role="list" class="list">
+                <li class="list-item"><span class="text-span">Higher temperature</span> will produce more varied and unpredictable results.<br></li>
+                <li class="list-item"><span class="text-span-2">Lower temperature</span> will produce more conservative and predictable results.<br></li>
+                <li class="list-item"><span class="text-span-3">Context</span>: Remember or not previous answer</li>
+              </ul>
+            </div>
+          </div>
+        </form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+    </div>
+  </div>
